@@ -1,47 +1,38 @@
-# Systems Analytics Widget for Linux
-
-A minimal conky widget showing real-time system stats
-
+<h1 align="center">🎀 System Stats Widget for Linux</h1>
 <p align="center">
-  <img src="demo.gif" />
+  <i>A minimal conky configuration to show real-time system resource usage on Linux</i>
 </p>
 
+<br>
 
-## About
-
-[Conky](https://github.com/brndnmtthws/conky) is a free, light-weight system
-monitor for X, that displays any kind of information on your desktop.
-(for more information, see the [Conky Wiki on GitHub](https://github.com/brndnmtthws/conky/wiki))
-
-It is highly customisable through creating Configuration files, and this here is my
-configuration file. It aims to be simple, minimal and lightweight, while still
-clearly showing all your vital system stats at a glance.
+<p align="center"><img width="800" src="demo.gif" alt="Screen recording" /><p>
 
 
-## Installation
+### About
+This conky widget aims to show vital system stats at a glance, while also being simple, minimal and lightweight.
 
- 1. Firstly, install Conky. For Ubuntu/ Debian-based distros, this can be done with
-    ```
-    $ sudo apt-get install conky
-    ```
-    See the [official installation page](https://github.com/brndnmtthws/conky/wiki/Installation),
-    for instructions for your distro.
+[Conky](https://github.com/brndnmtthws/conky) is an open source, light-weight system monitor for X. It's easy to write widgets for, and can be used to display any kind of data directly on your desktop. For more info, see the [Conky Wiki on GitHub](https://github.com/brndnmtthws/conky/wiki)
 
- 2. Set the config file to `minimal-system-conky.conf`. You can do this by running:
-     ```
-     conky --config /path/to/minimal-conky/minimal-terminal-conky.conf
-     ```
- 3. Make this permant, and start conky on system start:
-  ```
+### Installation
+Firstly, if you haven't already - then install Conky for your system. See the [Installation Wiki](https://github.com/brndnmtthws/conky/wiki/Installation) for distro-specific instructions.
 
-  ```    
+Then download [`minimal-system-conky.conf`](https://raw.githubusercontent.com/Lissy93/conky-system-stats-widget/master/minimal-system-conky.conf), and pass it to conky, with the `--config` flag. e.g:
 
-## Contributing
+```bash
+mkdir -p ~/.config/conky/
+curl -o ~/.config/conky/minimal-system-conky.conf  \
+  https://raw.githubusercontent.com/Lissy93/conky-system-stats-widget/master/minimal-system-conky.conf
+conky --config ~/.config/conky/minimal-system-conky.conf
+```
 
+
+### Contributing
 If you have an improvement that you'd like to make, feel free to submit a pull request.
 
+---
 
-## License
-
-[MIT](https://gist.github.com/Lissy93/143d2ee01ccc5c052a17).
-[© Alicia Sykes 2018](http://aliciasykes.com) 
+<p  align="center">
+  <i>© <a href="https://aliciasykes.com">Alicia Sykes</a> 2018</i><br>
+  <i>Licensed under <a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></i><br>
+  <a href="https://github.com/lissy93"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a>
+</p>
